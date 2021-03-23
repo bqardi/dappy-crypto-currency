@@ -1,0 +1,10 @@
+.Menu {
+	&__item {
+		color: #1f2431;
+		text-decoration: none;
+		transition: opacity 0.15s;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}

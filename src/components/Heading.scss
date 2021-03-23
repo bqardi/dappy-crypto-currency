@@ -1,0 +1,109 @@
+.Heading {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em 1em;
+	&__push {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 180px;
+		width: 100%;
+		margin-bottom: 4em;
+		& a {
+			width: 100%;
+			height: 48px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&:hover {
+				background-color: lighten(#315efb, 35);
+			}
+		}
+	}
+	&__social {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		& a {
+			display: flex;
+			width: 48px;
+			height: 48px;
+			margin: 0.5em;
+		}
+	}
+	&__image {
+		max-width: 120px;
+		margin-right: 1em;
+	}
+	@media only screen and (min-width: 710px) {
+		& {
+			padding: 2em;
+		}
+		&__push {
+			flex-grow: 1;
+			flex-direction: row;
+			justify-content: unset;
+			height: auto;
+			width: auto;
+			margin-bottom: 0;
+			& a {
+				width: unset;
+				height: unset;
+				display: unset;
+				margin: 0 1em;
+				&:hover {
+					background-color: unset;
+				}
+			}
+		}
+		&__social {
+			display: block;
+			& a {
+				display: unset;
+				margin: 0.2em;
+			}
+		}
+	}
+}
+.Burger {
+	&__button {
+		width: 48px;
+		height: 48px;
+		border: none;
+		background-color: transparent;
+	}
+	&__content {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		display: none;
+		background-color: lighten(#315efb, 37);
+		padding: 4em 0;
+		&[open] {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	@media only screen and (min-width: 710px) {
+		& {
+			width: 100%;
+		}
+		&__button {
+			display: none;
+		}
+		&__content,
+		&__content[open] {
+			position: static;
+			background-color: transparent;
+			padding: 0;
+			display: flex;
+			flex-direction: row;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.App {
+	&__main {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 0 4em;
+		max-width: 768px;
+		margin: 0 auto;
+		padding: 0 2em;
+		box-sizing: border-box;
+		@media only screen and (min-width: 550px) {
+			& {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+	&__form {
+		$height: 36px;
+		$buttonWidth: 100px;
+		$borderRadius: 5px;
+		position: relative;
+		margin-top: 1em;
+		&Label {
+			display: none;
+		}
+		&Error ~ &Container &Input {
+			background-color: lighten(#ca0c0c, 40);
+		}
+		&Input {
+			height: $height;
+			width: calc(100% - #{$buttonWidth});
+			max-width: calc(400px - #{$buttonWidth});
+			padding: 0;
+			border: 1px solid #82899b;
+			border-right: none;
+			box-sizing: border-box;
+			border-radius: $borderRadius 0 0 $borderRadius;
+			padding: 0 1em;
+		}
+		&Submit {
+			height: $height;
+			width: $buttonWidth;
+			position: relative;
+			border-radius: 0 $borderRadius $borderRadius 0;
+			border: none;
+			background-color: #315efb;
+			color: white;
+			border-left: none;
+		}
+		&Error {
+			position: absolute;
+			top: 100%;
+			display: block;
+			color: #ca320c;
+			font-weight: 700;
+			font-size: 0.9em;
+			margin-top: 0.5em;
+		}
+	}
+}

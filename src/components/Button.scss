@@ -1,0 +1,18 @@
+.Button {
+	$height: 36px;
+	height: $height;
+	min-width: 180px;
+	border: none;
+	border-radius: $height / 2;
+	background-color: #315efb;
+	color: white;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	outline: none;
+	&:hover {
+		background-color: lighten(#315efb, 5);
+	}
+	&:focus {
+		border: 2px solid darken(#315efb, 30);
+	}
+}
