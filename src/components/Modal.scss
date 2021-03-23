@@ -1,0 +1,33 @@
+.Modal{
+    opacity: 0;
+    visibility: hidden;
+    transition-property: opacity, visibility;
+    transition-duration: .3s;
+    &[open]{
+        opacity: 1;
+        visibility: visible;
+    }
+    &__Window{
+        overflow: hidden;
+        transform: scale(0);
+        transition-property: transform;
+        transition-duration: .3s;
+    }
+    &[open] &__Window{
+        transform: scale(1);
+    }
+    &__CloseIcon{
+        width: 48px;
+        height: 48px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        & svg{
+            display: block;
+            fill: #222;
+        }
+        &:hover svg{
+            fill: #555;
+        }
+    }
+}

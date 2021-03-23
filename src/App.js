@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Form from "./components/Form";
 import validate from "./components/Validation";
 import Menu from "./components/Menu";
+import CookieConsent from "./components/CookieConsent";
 
 function App() {
 	return (
@@ -109,6 +110,7 @@ function App() {
 					</Form>
 				</Footer.Item>
 			</Footer>
+      <CookieConsent />
 		</>
 	);
 }
