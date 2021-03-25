@@ -1,5 +1,4 @@
 import Info from "./components/Info";
-import "./App.scss";
 import Hero from "./components/Hero";
 import Heading from "./components/Heading";
 import Footer from "./components/Footer";
@@ -7,6 +6,8 @@ import Form from "./components/Form";
 import validate from "./components/Validation";
 import Menu from "./components/Menu";
 import CookieConsent from "./components/CookieConsent";
+import RoadmapLayout from "./components/RoadmapLayout";
+import "./App.scss";
 
 function App() {
 	return (
@@ -15,31 +16,42 @@ function App() {
 			<Hero />
 			<main className="App__main">
 				<Info size="small">
-					Dappy is light wallet powered by Blockstack. It uses Gaia
-					decentralized storage and encryption option. Dappy doesn't store or
-					proceed user private key, the all data are securely stored in the
-					Gaia. Dappy was created by the BC Net that trust in crypto and
-					decentralized applications.
+					<p className="App__text">
+						Dappy is light wallet powered by Blockstack. It uses Gaia
+						decentralized storage and encryption option. Dappy doesn't store or
+						proceed user private key, the all data are securely stored in the
+						Gaia. Dappy was created by the BC Net that trust in crypto and
+						decentralized applications.
+					</p>
 				</Info>
 				<Info title="Multi-currencies" imgPath="./images/multi-currencies.svg">
-					Receive, send and store the most popular coins, like Bitcoin,
-					Ethereum, Litecoin, Dash and lots more.
+					<p className="App__text">
+						Receive, send and store the most popular coins, like Bitcoin,
+						Ethereum, Litecoin, Dash and lots more.
+					</p>
 				</Info>
 				<Info
 					title="Free and open source"
 					imgPath="./images/free-and-open-source.svg"
 				>
-					Fully open and transparent wallet. Our code is{" "}
-					<strong>open source</strong> and trusted by Blockstack Team.
+					<p className="App__text">
+						Fully open and transparent wallet. Our code is <strong>open source</strong> and trusted by Blockstack Team.
+					</p>
 				</Info>
 				<Info title="Tokens" imgPath="./images/tokens.svg">
-					Full support for any tokens on Ethereum network. Bitcoin tokens
-					(Omnilayer) is coming soon.
+					<p className="App__text">
+						Full support for any tokens on Ethereum network. Bitcoin tokens
+						(Omnilayer) is coming soon.
+					</p>
 				</Info>
-				<Info size="large" title="Roadmap" imgPath="./images/roadmap.svg" />
-				<Info title="Exchange" imgPath="./images/exchange.svg">
-					In-app exchange is supported by ShapeShift, it allows to convert coins
-					to each other in the most intuitive and easiest way.
+				<Info size="large" title="Roadmap">
+					<RoadmapLayout />
+				</Info>
+				<Info title="Exchange" imgPath="./images/exchange.svg" swap>
+					<p className="App__text">
+						In-app exchange is supported by ShapeShift, it allows to convert coins
+						to each other in the most intuitive and easiest way.
+					</p>
 				</Info>
 			</main>
 			<Footer>

@@ -1,13 +1,14 @@
 import "./Info.scss";
 
-function Info({ title, imgPath, children, size = "" }) {
+function Info({ title, imgPath, children, size = "", swap }) {
 	return (
 		<article className={`Info${size && " Info--" + size}`}>
 			{title && <h2 className="Info__title">{title}</h2>}
+			{swap && children && <div className="Info__content">{children}</div>}
 			{imgPath && (
 				<img src={imgPath} alt={title || "Graphics"} className="Info__image" />
 			)}
-			{children && <p className="Info__text">{children}</p>}
+			{!swap && children && <div className="Info__content">{children}</div>}
 		</article>
 	);
 }
