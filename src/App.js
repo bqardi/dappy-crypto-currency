@@ -16,7 +16,7 @@ function App() {
 			<Hero />
 			<main className="App__main">
 				<Info size="small">
-					<p>
+					<p className="App__text">
 						Dappy is light wallet powered by Blockstack. It uses Gaia
 						decentralized storage and encryption option. Dappy doesn't store or
 						proceed user private key, the all data are securely stored in the
@@ -25,7 +25,7 @@ function App() {
 					</p>
 				</Info>
 				<Info title="Multi-currencies" imgPath="./images/multi-currencies.svg">
-					<p>
+					<p className="App__text">
 						Receive, send and store the most popular coins, like Bitcoin,
 						Ethereum, Litecoin, Dash and lots more.
 					</p>
@@ -34,12 +34,12 @@ function App() {
 					title="Free and open source"
 					imgPath="./images/free-and-open-source.svg"
 				>
-					<p>
+					<p className="App__text">
 						Fully open and transparent wallet. Our code is <strong>open source</strong> and trusted by Blockstack Team.
 					</p>
 				</Info>
 				<Info title="Tokens" imgPath="./images/tokens.svg">
-					<p>
+					<p className="App__text">
 						Full support for any tokens on Ethereum network. Bitcoin tokens
 						(Omnilayer) is coming soon.
 					</p>
@@ -47,8 +47,8 @@ function App() {
 				<Info size="large" title="Roadmap">
 					<RoadmapLayout />
 				</Info>
-				<Info title="Exchange" imgPath="./images/exchange.svg">
-					<p>
+				<Info title="Exchange" imgPath="./images/exchange.svg" swap>
+					<p className="App__text">
 						In-app exchange is supported by ShapeShift, it allows to convert coins
 						to each other in the most intuitive and easiest way.
 					</p>
