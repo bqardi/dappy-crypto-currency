@@ -1,50 +1,50 @@
-.Roadmap{
+.Roadmap {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1em;
-	&__item{
+	&__item {
 		margin-bottom: 3vw;
 	}
-	&__row{
+	&__row {
 		display: flex;
 		align-items: center;
 		height: 32px;
-		&--space{
+		&--space {
 			justify-content: space-between;
 		}
 	}
-	&__line{
+	&__line {
 		height: 2px;
 		width: calc(100% - 32px);
-		background-color: #EEEEFF;
+		background-color: #eeeeff;
 	}
-	&__dot{
+	&__dot {
 		width: 24px;
 		height: 24px;
 		border-radius: 50%;
 		margin-right: 10px;
-		&--small{
+		&--small {
 			width: 8px;
 			height: 8px;
 			margin-right: 3px;
 		}
-		&--white{
-			background-image: linear-gradient(-45deg, #E1E1FF, #e1e1ff10);
+		&--white {
+			background-image: linear-gradient(-45deg, #e1e1ff, #e1e1ff10);
 		}
-		&--green{
-			background-image: linear-gradient(-45deg, #6AD050, #6AD05010);
+		&--green {
+			background-image: linear-gradient(-45deg, #6ad050, #6ad05010);
 		}
-		&--blue{
-			background-image: linear-gradient(-45deg, #7392FC, #7392FC10);
+		&--blue {
+			background-image: linear-gradient(-45deg, #7392fc, #7392fc10);
 		}
 	}
-	&__date{
+	&__date {
 		font-size: 12px;
 		font-weight: 200;
-		color: #1F2431;
+		color: #1f2431;
 		margin: 0;
 	}
-	&__text{
+	&__text {
 		font-size: 0.8em;
 		font-weight: 200;
 		margin: 0;

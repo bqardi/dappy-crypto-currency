@@ -1,13 +1,13 @@
 import { Fragment, useEffect, useState } from "react";
 import Roadmap from "./Roadmap";
 
-function RoadmapLayout({children}){
+function RoadmapLayout({ children }) {
 	var [data, seetData] = useState([]);
 
 	useEffect(() => {
 		fetch("/data/roadmap.json")
-			.then(response => response.json())
-			.then(result => seetData(result.items));
+			.then((response) => response.json())
+			.then((result) => seetData(result.items));
 	}, []);
 
 	return (
@@ -31,19 +31,19 @@ function RoadmapLayout({children}){
 							{(index + 1) % 3 !== 0 ? <Roadmap.Line /> : undefined}
 						</Roadmap.Row>
 						<Roadmap.Row>
-							{item.date ? <Roadmap.Date>
-								{item.date}
-							</Roadmap.Date> : undefined}
+							{item.date ? <Roadmap.Date>{item.date}</Roadmap.Date> : undefined}
 						</Roadmap.Row>
 						<Roadmap.Text>
-							{item.content.map((content, i, arr) =>
+							{item.content.map((content, i, arr) => (
 								<Fragment key={i}>
-									{i === arr.length - 1 ? content : [content, <br key={"br-" + i}/>]}
+									{i === arr.length - 1
+										? content
+										: [content, <br key={"br-" + i} />]}
 								</Fragment>
-							)}
+							))}
 						</Roadmap.Text>
 					</Roadmap.Item>
-				)
+				);
 			})}
 		</Roadmap>
 	);

@@ -1,7 +1,8 @@
-html, body {
+html,
+body {
 	margin: 0;
 	font-family: "Montserrat", sans-serif;
-	&.modal--open{
+	&.modal--open {
 		height: 100vh;
 		overflow-y: hidden;
 	}

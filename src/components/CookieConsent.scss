@@ -1,11 +1,11 @@
-.CookieConsent{
+.CookieConsent {
 	// Toggle variables
 	$toggleHeight: 32px;
 	$toggleColorOff: hsl(0, 0%, 80%);
 	$toggleColorOn: hsl(120, 40%, 40%);
 	$toggleBorderWidth: 2px;
-	$toggleDuration: .2s;
-	
+	$toggleDuration: 0.2s;
+
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -17,7 +17,7 @@
 	justify-content: center;
 	align-items: center;
 	backdrop-filter: blur(3px);
-	&__window{
+	&__window {
 		max-width: 500px;
 		max-height: 400px;
 		min-width: 300px;
@@ -31,79 +31,79 @@
 		flex-direction: column;
 		box-shadow: 3px 3px 15px 0 rgba(0, 0, 0, 0.5);
 	}
-	&__header{
+	&__header {
 		background-color: #315efb;
 		color: white;
 		padding: 1em;
 	}
-	&__title{
+	&__title {
 		margin: 0;
 	}
-	&__content{
+	&__content {
 		flex-grow: 1;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 	}
-	&__table{
+	&__table {
 		padding: 1em;
-		tr td p{
+		tr td p {
 			font-size: 0.8em;
 		}
-		tr td:first-of-type{
+		tr td:first-of-type {
 			width: 25%;
 			min-width: $toggleHeight * 3;
 			text-align: center;
 		}
 	}
-	&__buttons{
+	&__buttons {
 		display: flex;
 		justify-content: flex-end;
 	}
-	&__button{
+	&__button {
 		border: none;
 		background-color: lightgray;
-		padding: .9em 1em;
+		padding: 0.9em 1em;
 		min-width: 140px;
 		transition: filter $toggleDuration;
-		&:first-of-type{
+		&:first-of-type {
 			border-top-left-radius: 15px;
 		}
-		&:hover{
+		&:hover {
 			filter: brightness(110%);
 		}
-		&--highlight{
+		&--highlight {
 			color: white;
 			background-color: $toggleColorOn;
 		}
 	}
 	// Toggle
-	&__input{
+	&__input {
 		visibility: hidden;
 		width: 1px;
 		height: 1px;
 		display: none;
-		&:focus + .CookieConsent__toggle{
+		&:focus + .CookieConsent__toggle {
 			outline: 2px solid red;
 		}
-		&:checked + .CookieConsent__toggle{
+		&:checked + .CookieConsent__toggle {
 			background-color: $toggleColorOn;
 		}
-		&:checked + .CookieConsent__toggle::after{
+		&:checked + .CookieConsent__toggle::after {
 			transform: translateX($toggleHeight);
 		}
-		&:checked + .CookieConsent__toggle:hover{
+		&:checked + .CookieConsent__toggle:hover {
 			border: $toggleBorderWidth solid darken($toggleColorOn, 10);
 		}
-		&:disabled + .CookieConsent__toggle{
+		&:disabled + .CookieConsent__toggle {
 			opacity: 0.5;
 			transition: border $toggleDuration;
 		}
-		&:disabled + .CookieConsent__toggle:hover{
+		&:disabled + .CookieConsent__toggle:hover {
 			border: $toggleBorderWidth solid transparent;
 		}
 	}
-	&__toggle{
+	&__toggle {
 		display: inline-block;
 		width: $toggleHeight * 2;
 		height: $toggleHeight;
@@ -111,7 +111,7 @@
 		background-color: $toggleColorOff;
 		border: $toggleBorderWidth solid transparent;
 		transition: background-color $toggleDuration, border $toggleDuration;
-		&::after{
+		&::after {
 			content: "";
 			display: block;
 			width: $toggleHeight;
@@ -121,7 +121,7 @@
 			box-sizing: border-box;
 			transition: transform $toggleDuration;
 		}
-		&:hover{
+		&:hover {
 			border: $toggleBorderWidth solid darken($toggleColorOff, 10);
 		}
 	}

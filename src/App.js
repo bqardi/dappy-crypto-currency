@@ -35,7 +35,8 @@ function App() {
 					imgPath="./images/free-and-open-source.svg"
 				>
 					<p className="App__text">
-						Fully open and transparent wallet. Our code is <strong>open source</strong> and trusted by Blockstack Team.
+						Fully open and transparent wallet. Our code is{" "}
+						<strong>open source</strong> and trusted by Blockstack Team.
 					</p>
 				</Info>
 				<Info title="Tokens" imgPath="./images/tokens.svg">
@@ -49,8 +50,8 @@ function App() {
 				</Info>
 				<Info title="Exchange" imgPath="./images/exchange.svg" swap>
 					<p className="App__text">
-						In-app exchange is supported by ShapeShift, it allows to convert coins
-						to each other in the most intuitive and easiest way.
+						In-app exchange is supported by ShapeShift, it allows to convert
+						coins to each other in the most intuitive and easiest way.
 					</p>
 				</Info>
 			</main>
@@ -122,7 +123,7 @@ function App() {
 					</Form>
 				</Footer.Item>
 			</Footer>
-      <CookieConsent />
+			<CookieConsent />
 		</>
 	);
 }

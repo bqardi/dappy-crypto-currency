@@ -4,123 +4,91 @@
 			"id": "rm-01",
 			"status": "done",
 			"date": "May 2018",
-			"content": [
-				"Blockstack",
-				"Autorisation"
-			]
+			"content": ["Blockstack", "Autorisation"]
 		},
 		{
 			"id": "rm-02",
 			"status": "done",
 			"date": "",
-			"content": [
-				"Decentralized storage Gaia"
-			]
+			"content": ["Decentralized storage Gaia"]
 		},
 		{
 			"id": "rm-03",
 			"status": "done",
 			"date": "",
-			"content": [
-				"BTC, ETH, ETC, LTC, BCH, BTG, DOGE, DCR, DACH"
-			]
+			"content": ["BTC, ETH, ETC, LTC, BCH, BTG, DOGE, DCR, DACH"]
 		},
 		{
 			"id": "rm-04",
 			"status": "done",
 			"date": "",
-			"content": [
-				"Support ERC20 tokens"
-			]
+			"content": ["Support ERC20 tokens"]
 		},
 		{
 			"id": "rm-05",
 			"status": "done",
 			"date": "",
-			"content": [
-				"Support custom token"
-			]
+			"content": ["Support custom token"]
 		},
 		{
 			"id": "rm-06",
 			"status": "done",
 			"date": "June 2018",
-			"content": [
-				"Exchange powered by ShapeShift"
-			]
+			"content": ["Exchange powered by ShapeShift"]
 		},
 		{
 			"id": "rm-07",
 			"status": "progress",
 			"date": "2018 - 2019",
-			"content": [
-				"Add more coins:",
-				"ZEC, DCR, XRP..."
-			]
+			"content": ["Add more coins:", "ZEC, DCR, XRP..."]
 		},
 		{
 			"id": "rm-08",
 			"status": "pending",
 			"date": "",
-			"content": [
-				"Blockstack contact list"
-			]
+			"content": ["Blockstack contact list"]
 		},
 		{
 			"id": "rm-09",
 			"status": "pending",
 			"date": "",
-			"content": [
-				"Support token for each coins"
-			]
+			"content": ["Support token for each coins"]
 		},
 		{
 			"id": "rm-10",
 			"status": "pending",
 			"date": "",
-			"content": [
-				"Support private key in different formats"
-			]
+			"content": ["Support private key in different formats"]
 		},
 		{
 			"id": "rm-11",
 			"status": "pending",
 			"date": "",
-			"content": [
-				"Multilanguage support"
-			]
+			"content": ["Multilanguage support"]
 		},
 		{
 			"id": "rm-12",
 			"status": "pending",
 			"date": "",
-			"content": [
-				"Different UI themes"
-			]
+			"content": ["Different UI themes"]
 		},
 		{
 			"id": "rm-13",
 			"status": "pending",
 			"date": "",
-			"content": [
-				"Ledger, Trezor integrations"
-			]
+			"content": ["Ledger, Trezor integrations"]
 		},
 		{
 			"id": "rm-14",
 			"status": "pending",
 			"date": "",
-			"content": [
-				"In-app marketplace or DApp browser"
-			]
+			"content": ["In-app marketplace or DApp browser"]
 		},
 		{
 			"id": "rm-15",
 			"status": "more",
 			"date": "",
-			"content": [
-				"and lots more"
-			]
+			"content": ["and lots more"]
 		}
 	]
 }

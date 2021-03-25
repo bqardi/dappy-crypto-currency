@@ -1,7 +1,7 @@
-function setCookies(config){
+function setCookies(config) {
 	if (config?.acceptanalytics) {
 		//eslint-disable-next-line
-		gtag('config', 'G-J6CZ5CBJDN');
+		gtag("config", "G-J6CZ5CBJDN");
 	}
 }
 
