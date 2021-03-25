@@ -4,7 +4,7 @@ function Button({ title }) {
 	return (
 		<button
 			// eslint-disable-next-line
-			onClick={() => gtag("event", "cta", { type: "B", cta: title })}
+			onClick={() => gtag("event", "cta", { type: "A", cta: title })}
 			className="Button"
 		>
 			{title}
