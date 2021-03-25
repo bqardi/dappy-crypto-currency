@@ -7,7 +7,7 @@ function Info({ title, imgPath, children, size = "" }) {
 			{imgPath && (
 				<img src={imgPath} alt={title || "Graphics"} className="Info__image" />
 			)}
-			{children && <p className="Info__text">{children}</p>}
+			{children && <div className="Info__content">{children}</div>}
 		</article>
 	);
 }

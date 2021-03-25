@@ -1,5 +1,7 @@
 .Info {
 	grid-row: span 2;
+	display: flex;
+	flex-direction: column;
 	&--small {
 		grid-row: span 1;
 	}
@@ -11,8 +13,9 @@
 	}
 	&__image {
 		max-width: 100%;
+		margin: 0 auto;
 	}
-	&__text {
+	&__content {
 		color: #82899b;
 		& strong {
 			color: #1f2431;

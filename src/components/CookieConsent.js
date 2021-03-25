@@ -34,7 +34,7 @@ function CookieConsent(){
 	}
 
 	function accept(e){
-		var now = Date.now() + 60 * 1000;
+		var now = Date.now() + 60 * 60 * 24 * 1000;
 		var expirationDate = new Date(now).toUTCString();
 		var payload = {
 			acceptneccesary: true,
@@ -46,7 +46,7 @@ function CookieConsent(){
 	}
 
 	function acceptAll(e){
-		var now = Date.now() + 60 * 1000;
+		var now = Date.now() + 60 * 60 * 24 * 1000;
 		var expirationDate = new Date(now).toUTCString();
 		var payload = {
 			acceptneccesary: true,
